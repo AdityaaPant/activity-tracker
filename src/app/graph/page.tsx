@@ -9,7 +9,6 @@ const chartData = [
 	{ month: "February", desktop: 305, mobile: 200 },
 	{ month: "March", desktop: 237, mobile: 120 },
 	{ month: "April", desktop: 73, mobile: 190 },
-	,
 ];
 
 const chartConfig = {
@@ -25,7 +24,7 @@ const chartConfig = {
 
 export function Component() {
 	return (
-		<ChartContainer config={chartConfig} className="h-40 w-screen mx-20">
+		<ChartContainer config={chartConfig} className="h-40 w-full mx-20">
 			<BarChart accessibilityLayer data={chartData}>
 				<Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
 				<Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
